@@ -13,6 +13,14 @@ public class P11653 {
 		int n = Integer.parseInt(br.readLine());
 		
 		
+		for(int i=2; i<=n; i++) {
+			while(n%i==0) {
+				bw.write(String.valueOf(i));
+				n/=i;
+			}
+		}
+		
+		
 
 	}
 
